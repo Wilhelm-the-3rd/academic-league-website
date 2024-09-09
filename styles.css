@@ -1,0 +1,241 @@
+@font-face { font-family: Aver; src: url('media/Aver-opKo.ttf'); }
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9F2E1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Header Style */
+.hero-header {
+    background-color: #F9F2E1;
+    color: #222222;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero-header .logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.hero-header h1 {
+    font-family: 'Aver', serif;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero-header .main-nav {
+    margin-top: 20px;
+}
+
+.hero-header .main-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hero-header .main-nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.hero-header .main-nav ul li a {
+    color: #222222;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.hero-header .main-nav ul li a:hover {
+    color: #ffcc33;
+}
+
+/* Banner with Quote */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    border-style: double;
+    border-color: #ffcc33;
+}
+
+.banner .banner-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .dim-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1; /* Ensure the overlay is on top of the image */
+}
+
+.banner .banner-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+/* Main Content Style */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+}
+
+.section ul li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.section ul li strong {
+    color: #F9F2E1;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 4px solid #eee;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact and Social Media */
+#contact ul, #social-media ul {
+    text-align: center;
+    list-style: none;
+}
+
+#contact ul li, #social-media ul li {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coach-info {
+    padding-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.coach {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#social-media ul li a {
+    color: #F9F2E1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: color 0.3s ease;
+}
+
+#social-media ul li a:hover {
+    color: #ffcc33;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-header h1 {
+        font-size: 3em;
+    }
+
+    .hero-header .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .photo-gallery img {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .banner .banner-quote {
+        font-size: 1.8em;
+        padding: 15px 25px;
+    }
+}
